@@ -136,10 +136,7 @@ img {
 .communication {
   display: flex;
   margin-left: auto;
-}
-
-.communication .item + .item {
-  margin-left: 50px;
+  gap: 50px;
 }
 
 .communication .link {
@@ -161,11 +158,20 @@ img {
 }
 
 /* second section */
+
+/* hero */
 .section-hero {
   padding: 200px 0;
 
   background-color: var(--hero-footer-color);
   text-align: center;
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -182,6 +188,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+/* benefits */
 .benefits-title {
   display: flex;
   flex-wrap: wrap;
@@ -189,6 +197,18 @@ img {
 }
 .benefits-title .items {
   flex-basis: calc((100% - 90px) / 4);
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 270px;
+  min-height: 120px;
+  margin-bottom: 20px;
+
+  background-color: var(--bcg-color-button);
+  border-radius: 4px;
 }
 
 .benefits-title .title {
@@ -219,6 +239,7 @@ img {
   letter-spacing: 0.03em;
 }
 
+/* photo */
 .section-title {
   margin-bottom: 50px;
 
@@ -241,7 +262,7 @@ img {
 .photo-items {
   flex-basis: calc((100% - 60px) / 3);
 }
-
+/* team-section */
 .team-section {
   padding: 94px 0;
 
@@ -277,10 +298,21 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .text-helper {
-  padding: 30px 0;
+  padding: 42px 0;
+}
+
+.team-links {
+  display: flex;
+  padding: 0 32px;
+  gap: 34px;
+  justify-content: center;
+}
+
+.social-links {
 }
 
 /* click */
@@ -314,7 +346,34 @@ img {
   padding: 10px 0;
 }
 
-/* second section for second page */
+/* clients */
+
+.clients {
+  padding: 94px;
+}
+
+.divone {
+  display: flex;
+}
+
+.divtwo {
+  display: flex;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.company-logo {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+/* portfolio section */
 .filter {
   display: flex;
   justify-content: center;
@@ -387,7 +446,7 @@ img {
   text-decoration: none;
 }
 
-/* last one */
+/* footer */
 .last-page {
   padding: 60px 0;
 
