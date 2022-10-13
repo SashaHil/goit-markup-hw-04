@@ -6,6 +6,7 @@
   --primary-white-color: #ffffff;
   --hero-footer-color: #2f303a;
   --bcg-color-button: #f5f4fa;
+  --svg-color: #afb1b8;
   --address-color: rgba(255, 255, 255, 0.6);
   --main-font-family: "Roboto", sans-serif;
   --main-font-size: 16px;
@@ -316,24 +317,32 @@ img {
 }
 
 .text-helper {
-  padding: 42px 0;
+  padding: 30px 0;
 }
 
 .team-links {
   display: flex;
-  /* gap: 10px; */
-  /* justify-content: center; */
+  gap: 10px;
+  justify-content: center;
+}
+
+.svg-links {
+  fill: var(--svg-color);
+  padding: 12px;
 }
 
 .social-links {
   display: block;
-  padding: 12px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 
-.svg-links {
+.team-links .link:hover,
+.team-links .link:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 /* click */
@@ -380,15 +389,25 @@ img {
 
 .company-logo {
   flex-basis: calc((100% - 150px) / 6);
-  border: 1px solid #afb1b8;
+}
+
+.company-link {
+  display: block;
+  padding: 16px 32px;
+
+  color: var(--svg-color);
+  border: 1px solid var(--svg-color);
   border-radius: 4px;
 }
 
+.clients-list .link:hover,
+.clients-list .link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
 .clients-logo {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 16px 32px;
+  fill: currentColor;
 }
 
 /* portfolio section */
@@ -396,10 +415,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.filter .items:not(:last-child) {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 .filter .btn {
@@ -440,6 +456,16 @@ img {
 
 .work-list {
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.work-list:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .works-title {
@@ -524,5 +550,37 @@ img {
 }
 
 .footer-social-links {
-  /* display: flex; */
+  display: flex;
+  gap: 100px;
+  align-items: baseline;
+}
+
+.social-title {
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-items-link {
+  display: flex;
+  gap: 10px;
+}
+
+.social-items {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-items-link .link:hover,
+.footer-items-link .link:focus {
+  background-color: var(--accent-color);
 }
