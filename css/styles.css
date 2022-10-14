@@ -560,7 +560,9 @@ img {
 }
 
 .social-items {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -575,7 +577,5 @@ img {
 }
 
 .footer-svg {
-  padding: 12px;
-
   fill: currentColor;
 }
