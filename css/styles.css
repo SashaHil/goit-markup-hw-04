@@ -573,6 +573,7 @@ img {
   height: 44px;
   border-radius: 50%;
 
+  color: var(--primary-white-color);
   background-color: var(--svg-background-color);
 }
 
@@ -584,5 +585,5 @@ img {
 .footer-svg {
   padding: 12px;
 
-  fill: var(--primary-white-color);
+  fill: currentColor;
 }
