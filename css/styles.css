@@ -1,6 +1,7 @@
 :root {
   --text-color: #212121;
-  --p-tel-mail-color: #757575;
+  --p-color: #757575;
+  --tel-mail-color: #757575;
   --accent-color: #2196f3;
   --logo-header-color: #000000;
   --primary-white-color: #ffffff;
@@ -144,7 +145,7 @@ img {
   display: block;
   padding: 32px 0;
 
-  color: var(--p-tel-mail-color);
+  color: var(--tel-mail-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -239,7 +240,7 @@ img {
 }
 
 .benefits-title .text {
-  color: var(--p-tel-mail-color);
+  color: var(--p-color);
 
   font-size: 14px;
   line-height: 1.71;
@@ -247,7 +248,7 @@ img {
 }
 
 .text {
-  color: var(--p-tel-mail-color);
+  color: var(--p-color);
 
   font-size: var(--main-font-size);
   line-height: 1.19;
@@ -307,7 +308,7 @@ img {
 }
 
 .team-text {
-  color: var(--p-tel-mail-color);
+  color: var(--p-color);
 
   font-size: var(--main-font-size);
   line-height: 1.19;
